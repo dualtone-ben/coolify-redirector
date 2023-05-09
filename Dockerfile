@@ -1,6 +1,5 @@
-FROM nginx:alpine
+FROM nginx
 
-ENV REDIRECT_URL https://www.example.com
+ENV REDIRECT_URL https://example.com/new-url
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-
+COPY nginx.conf /etc/nginx/nginx.conf
